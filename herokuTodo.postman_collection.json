@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "a70020a0-1284-4a2e-9e9e-30853dde2246",
+		"name": "herokuTodo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://radiant-wildwood-03286.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"radiant-wildwood-03286",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增todos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"我要倒垃圾\"\n}",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://radiant-wildwood-03286.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"radiant-wildwood-03286",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://radiant-wildwood-03286.herokuapp.com/todos/id",
+					"protocol": "https",
+					"host": [
+						"radiant-wildwood-03286",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://radiant-wildwood-03286.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"radiant-wildwood-03286",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆todos",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"變更\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://radiant-wildwood-03286.herokuapp.com/todos/id",
+					"protocol": "https",
+					"host": [
+						"radiant-wildwood-03286",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"id"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
